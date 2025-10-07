@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+#shapeContainer::-webkit-scrollbar {
+	width: 6px;
+}
+
+#shapeContainer::-webkit-scrollbar-thumb {
+	background-color: rgb(248, 204, 71);
+	border-radius: 10px;
+}
+
+#shapeContainer::-webkit-scrollbar-track {
+	background: transparent;
+}
