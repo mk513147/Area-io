@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const CircleCalculator = () => {
 	const [radius, setRadius] = useState("");
 	const area = radius ? Math.PI * radius * radius : 0;
