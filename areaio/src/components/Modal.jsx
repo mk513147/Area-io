@@ -4,6 +4,7 @@ import {
 	SquareCalculator,
 	RectangleCalculator,
 	TriangleCalculator,
+	HexagonCalculator,
 } from "./calculators";
 
 const calculatorMap = {
@@ -11,6 +12,7 @@ const calculatorMap = {
 	Triangle: TriangleCalculator,
 	Rectangle: RectangleCalculator,
 	Square: SquareCalculator,
+	Hexagon: HexagonCalculator,
 };
 
 const Modal = ({ toggleModal, title, shapeImage }) => {
@@ -39,7 +41,7 @@ const Modal = ({ toggleModal, title, shapeImage }) => {
 
 				<div
 					id="calculator"
-					className="w-full lg:w-1/2 p-4 flex flex-col justify-between items-center h-full"
+					className="w-full lg:w-1/2 p-4 flex flex-col justify-evenly items-center h-full"
 				>
 					<h2 className="text-4xl font-bold mb-4">{title}</h2>
 					<div id="inputGroup" className="mb-4">
