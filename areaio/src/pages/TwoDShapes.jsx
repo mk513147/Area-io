@@ -65,7 +65,7 @@ const TwoDShapes = () => {
 			<div
 				id="shapeContainer"
 				className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 
-             w-[85%] max-w-full sm:w-[90%] h-[85%] p-10 gap-10 place-items-center 
+             w-[85%] max-w-full sm:w-[90%] h-[85%] p-10 gap-5 md:gap-10 place-items-center 
              overflow-y-auto overflow-x-hidden mx-auto scroll-smooth"
 			>
 				{shapes.map((shape) => (

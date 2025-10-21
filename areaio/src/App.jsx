@@ -7,10 +7,15 @@ function App() {
 		<>
 			<div
 				id="body"
-				className="flex flex-col justify-center items-center w-full h-screen"
+				className="flex flex-col justify-center items-center w-full min-h-screen"
 			>
-				<h1 className="text-9xl text-amber-300 font-bold">AREA IO</h1>
-				<div id="categories" className="flex gap-20 mt-20">
+				<h1 className="md:text-9xl text-6xl text-amber-300 font-bold">
+					AREA IO
+				</h1>
+				<div
+					id="categories"
+					className="flex flex-wrap justify-center gap-20 mt-20"
+				>
 					<Link to="/pages/TwoDShapes">
 						<HomeBox title={"2D Shapes"} />
 					</Link>
@@ -19,7 +24,6 @@ function App() {
 					</Link>
 				</div>
 			</div>
-			{/* This is where the page content will be shown */}
 			<div id="page-content">
 				<Outlet />
 			</div>
